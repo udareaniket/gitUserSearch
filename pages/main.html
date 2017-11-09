@@ -1,0 +1,40 @@
+<style>
+.demo-card-square.mdl-card {
+	width: 320px;
+	height: 320px;
+}
+
+.demo-card-square>.mdl-card__title {
+	color: #fff;
+}
+</style>
+<div class="content" ng-controller="MainController">
+	<div class="mdl-grid mdl-cell--4-col">
+		<div
+			class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--12-col">
+			<input style="float: left" class="mdl-textfield__input" type="text"
+				ng-change="search()" ng-model="searchQuery" id="searchId"
+				placeholder="Search..." />
+		</div>
+	</div>
+	<div class="mdl-grid mdl-cell--8-col" ng-show="searchQuery!=''" 
+		style="max-height: 400px; overflow-y: auto;" id="scrollDiv">
+		<div class="mdl-list__item" style="cursor: pointer;"
+			ng-repeat="user in searchResult.items track by $index"
+			ng-click="goToUser(user.login)">
+			<span class="mdl-list__item-primary-content"> <img
+				src="{{user.avatar_url}}"
+				class="material-icons mdl-list__item-avatar" alt="{{user.login}}"></img>
+				<span>{{user.login}}</span>
+			</span>
+		</div>
+	</div>
+	<div class="mdl-grid mdl-cell--8-col" ng-show="searchQuery!=''">
+		<button style="margin-left: 12px;" ng-disabled="disbalePrev"
+			class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
+			ng-click="prev()">Prev</button>
+		<button style="margin-left: 12px;" ng-disabled="disbaleNext"
+			class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
+			ng-click="next()">Next</button>
+	</div>
+</div>
