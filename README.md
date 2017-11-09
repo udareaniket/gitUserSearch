@@ -8,5 +8,5 @@ On the second screen left panel, basic details of the git user are shown. Detail
 
 On the second screen right panel, followers of the searched git user are shown(upto 100 per page). You can click on the individual follower to see thier follower(this provides a reccursive search).
 
-**You can see the demo here:**
+**You can see the demo here:**  [Demo](http://gitsearch-env-1.7upg4i2kjb.us-east-2.elasticbeanstalk.com/)
 
