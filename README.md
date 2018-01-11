@@ -14,5 +14,5 @@ Used AngularJs 1 as the front end framework along with material design css from 
 
 Basic use of jQuery,bootstrap,javascript.
 
-**You can see the demo here:**  [Demo](http://gitsearch-env-1.7upg4i2kjb.us-east-2.elasticbeanstalk.com/)
+**You can see the demo here:**  [Demo](https://udareaniket.github.io/gitUserSearch/)
 
