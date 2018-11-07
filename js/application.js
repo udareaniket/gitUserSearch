@@ -18,7 +18,7 @@ app.config(function ($stateProvider) {
 });
 app.controller('indexController', function ($state, $route, $mdDialog, $http, $rootScope, $scope, $location, $filter, $mdToast) {
 	$scope.navigateHome = function () {
-		$location.url('/menu')
+		$location.url('/main')
 	}
 	$scope.goToSearch = function () {
 		$state.go('mainSearch', {
